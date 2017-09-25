@@ -1,0 +1,40 @@
+.row-center {
+    float: none;
+    margin: 0 auto;
+}
+
+.login-vert-center {
+    margin-top: 40vh;
+}
+
+.registration-vert-center {
+    margin-top: 20vh;
+}
+
+.login-spacing {
+    margin-bottom: 10px;
+}
+
+.login-button {
+    display: block;
+    width: 100%
+}
+
+.login-link {
+    display: block;
+    margin-top: 10px;
+}
+
+.form-back {
+    background: #efefef;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.header-margin {
+    margin-bottom: 15px;
+}
+
+.display-inline {
+    display: inline;
+}

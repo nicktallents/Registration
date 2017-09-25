@@ -1,0 +1,37 @@
+<div class="container-fluid">
+    <form name="loginForm" ng-submit="submitCredentials()" novalidate>
+        <div class="row login-vert-center" ng-if="error != ''">
+            <p class="text-danger text-center row-center" ng-bind="error"></p>
+        </div>
+        <div class="row" ng-class="{ 'login-vert-center': error == '' }">
+            <div class="col-md-3 row-center">
+                <input type="text" 
+                       class="form-control login-spacing" 
+                       placeholder="User Name" 
+                       id="userName" 
+                       aria-label="User Name"
+                       ng-model="username" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 row-center">
+                <input type="password" 
+                       class="form-control login-spacing" 
+                       placeholder="Password" 
+                       id="password" 
+                       aria-label="Password"
+                       ng-model="password" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 row-center">
+                <input type="submit" class="btn btn-primary login-button" value="Login" />
+            </div>
+        </div>       
+    </form>
+    <div class="row">
+        <div class="col-md-3 row-center">
+            <a ui-sref="register" class="text-center login-link">Register a new account</a>
+        </div>
+    </div>
+</div>
